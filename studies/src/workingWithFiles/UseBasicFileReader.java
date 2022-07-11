@@ -9,14 +9,11 @@ import java.io.IOException;
 public class UseBasicFileReader {
     public static void main(String[] args){
 
-        String path = "Enter the path of your .txt file here";
-        FileReader fr = null;
-        BufferedReader br = null;
+        String path = "C:\\Users\\Matheus Henrique\\OneDrive\\Área de Trabalho\\MATEUS\\estudos-pessoais\\" +
+                "personal-workspace\\out\\production\\personal-workspace\\workingWithFiles\\teste.txt";
 
-        try{
-            fr = new FileReader(path); //pass the process of reading the file to the object
-            br = new BufferedReader(fr);
 
+        try(BufferedReader br = new BufferedReader(new FileReader(path))){
             String line = br.readLine();
 
             while(line != null){
@@ -25,18 +22,6 @@ public class UseBasicFileReader {
             }
         }catch (IOException error){
             System.out.println("Error:" + error.getMessage());
-        }finally {
-            try {
-                if (br != null){
-                    br.close();
-                }
-                if (fr != null){
-                    fr.close();
-                }
-            }catch (IOException error){
-                error.printStackTrace(); //exception check
-            }
-
         }
     }
 }
