@@ -39,8 +39,7 @@ public class Account {
     public Double getBalance() {
         return balance;
     }
-
-
+    
     public Double getWithdrawLimit() {
         return withdrawLimit;
     }
