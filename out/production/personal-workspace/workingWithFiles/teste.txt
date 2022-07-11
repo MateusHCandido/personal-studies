@@ -1,0 +1,8 @@
+Lendo linha 1
+Lendo linha 2
+Lendo linha 3
+Lendo linha 4
+Lendo linha 5
+Lendo linha 6
+Lendo linha 7
+Acabaram as linhas...
