@@ -6,3 +6,9 @@ Lendo linha 5
 Lendo linha 6
 Lendo linha 7
 Acabaram as linhas...
+
+Adicionando mais linhas...
+Lendo linha 8
+Lendo linha 9
+Lendo linha 10
+Acabaram as linhas de novo...
